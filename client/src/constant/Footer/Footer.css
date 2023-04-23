@@ -1,0 +1,323 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+.footer {
+  width: 100%;
+  height: 70vh;
+  display: flex;
+  background-color: black;
+  flex-direction: column;
+  position: relative;
+}
+
+.footer::before {
+  content: "REDPHANTOM";
+  position: absolute;
+  font-size: 95px;
+  font-family: "Poppins";
+  top: 10%;
+  left: 30%;
+  font-weight: bolder;
+  color: rgba(128, 128, 128, 0.178);
+}
+
+.footer::after {
+  content: "INDUSTRIES";
+  position: absolute;
+  font-size: 95px;
+  font-family: "Poppins";
+  bottom: 10%;
+  left: 30%;
+  font-weight: bolder;
+  color: rgba(128, 128, 128, 0.178);
+}
+
+.footer .footer_head {
+  /* border: 2px solid #ff0000; */
+  width: 100%;
+  height: 30%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.footer_head .footer_head_logo {
+  width: 20%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  gap: 30px;
+}
+
+.footer_head .footer_head_logo img {
+  width: 40%;
+  height: 40%;
+}
+
+.footer .footer_head_logo h3 {
+  font-family: "Dancing Script", cursive;
+  font-size: 20px;
+  color: white;
+}
+
+.footer_head .footer_head_socials {
+  width: 30%;
+  /* border: 2px solid aqua; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.footer_head .footer_head_socials h3 {
+  color: white;
+  font-size: 20px;
+}
+
+.footer_head .footer_head_socials .social_icons {
+  display: flex;
+  width: 60%;
+  justify-content: space-around;
+  gap: 5px;
+  cursor: pointer;
+  /* border: 1px solid crimson; */
+}
+
+.social_icons .icons {
+  width: 35px;
+  aspect-ratio: 1;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: white;
+  cursor: pointer;
+}
+
+.social_icons .icons:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 0px 3px white;
+}
+
+.footer_head .footer_head_mail {
+  width: 20%;
+  display: flex;
+  background: rgb(235, 51, 228);
+  background: linear-gradient(
+    86deg,
+    rgba(235, 51, 228, 1) 26%,
+    rgba(65, 5, 105, 1) 100%
+  );
+  height: 35px;
+}
+
+.footer .footer_head_mail input {
+  width: 100%;
+  padding: 4px 2px;
+  height: 100%;
+  background: transparent;
+  color: white;
+  outline: none;
+}
+
+.footer .footer_head_mail input::placeholder {
+  color: white;
+  font-size: 15px;
+  font-family: "Poppins";
+}
+
+.footer_links {
+  /* border: 2px solid red; */
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.footer_links .footer_links_col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 15%;
+  gap: 30px;
+  height: 60%;
+}
+
+.footer_links .footer_links_col h3 {
+  font-size: 20px;
+  font-family: "poppins";
+  background: linear-gradient(
+    86deg,
+    rgba(235, 51, 82, 1) 40%,
+    rgba(154, 0, 255, 1) 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.footer_links_col ul {
+  list-style: none;
+}
+
+.footer_links_col ul li a {
+  text-decoration: none;
+  color: rgb(182, 182, 182);
+  font-size: 14px;
+  font-family: "poppins";
+}
+
+.footer_links_col ul li a:hover {
+  color: white;
+}
+
+.footer .footer_copyright {
+  text-align: center;
+  color: white;
+  padding-bottom: 10px;
+  font-size: 15px;
+  font-family: "Poppins";
+}
+
+@media screen and (max-width: 900px) {
+  .footer::before {
+    content: "REDPHANTOM";
+    position: absolute;
+    font-size: 50px;
+    font-family: "Poppins";
+    top: 10%;
+    left: 30%;
+    font-weight: bolder;
+    color: rgba(128, 128, 128, 0.178);
+  }
+
+  .footer::after {
+    content: "INDUSTRIES";
+    position: absolute;
+    font-size: 50px;
+    font-family: "Poppins";
+    bottom: 10%;
+    left: 30%;
+    font-weight: bolder;
+    color: rgba(128, 128, 128, 0.178);
+  }
+
+  .footer .footer_head{
+    margin-bottom: 20px;
+    padding-top: 20px;
+  }
+
+  .footer_head .footer_head_logo img {
+    width: 35%;
+    height: 35%;
+  }
+
+  .footer .footer_head_logo h3 {
+    font-size: 12px;
+  }
+
+  .footer_head .footer_head_socials h3 {
+    font-size: 12px;
+  }
+  .footer_head .footer_head_socials .social_icons {
+    display: flex;
+    width: 33%;
+    justify-content: space-around;
+    gap: 10px;
+    cursor: pointer;
+  }
+
+  .social_icons .icons {
+    width: 30px;
+    padding: 2px;
+  }
+
+  .footer_head .footer_head_mail {
+    width: 18%;
+    height: 25px;
+  }
+
+  .footer_head .footer_head_mail > input::placeholder {
+    font-size: 10px;
+  }
+
+  .footer_links .footer_links_col {
+    gap: 15px;
+  }
+
+  .footer_links .footer_links_col h3 {
+    font-size: 15px;
+  }
+
+  .footer_links_col ul li a {
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 564px) {
+  .footer::before {
+    font-size: 35px;
+    top: 10%;
+    left: 22%;
+  }
+
+  .footer::after {
+    content: "INDUSTRIES";
+    position: absolute;
+    font-size: 35px;
+    bottom: 10%;
+    left: 30%;
+}
+
+  .footer .footer_head {
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+  }
+
+  .footer_head .footer_head_logo {
+    width: 80%;
+  }
+
+  .footer_head .footer_head_logo img {
+    width: 27%;
+    height: 78%;
+  }
+
+  .footer_head .footer_head_socials {
+    flex-direction: column;
+    width: 80%;
+    gap: 10px;
+    margin-bottom: 5px;
+  }
+
+  .footer_head .footer_head_mail {
+    width: 53%;
+    height: 25px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .footer_links {
+    margin-top: 25px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .footer_links .footer_links_col h3 {
+    font-size: 12px;
+  }
+
+  .footer_links_col ul li a {
+    font-size: 8px;
+  }
+
+  .footer .footer_copyright {
+    font-size: 10px;
+  }
+}
